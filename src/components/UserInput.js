@@ -29,6 +29,7 @@ class UserInput extends Component {
         <form onSubmit={(ev) => {this.onSubmit(ev)}}>
           <input type="text" value={this.state.username} onChange={(ev) => {this.onChangeUser(ev)}}/>
           <input type="text" value={this.state.hometown} onChange={(ev) => {this.onChangeHome(ev)}}/>
+          <button>Submit</button>
         </form>
       </div>
     );
