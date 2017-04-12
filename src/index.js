@@ -8,7 +8,7 @@ import App from './App';
 export function configureStore(){
   return createStore(manageBand, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 };
-
+let store = configureStore();
 ReactDOM.render(
   <App store={configureStore()} />,
   document.getElementById('root')
