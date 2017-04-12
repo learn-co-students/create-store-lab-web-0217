@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserInput from './components/UserInput';
+import { createStore } from 'redux';
 
 export class App extends Component {
   render() {
