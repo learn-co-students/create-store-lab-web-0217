@@ -6,7 +6,7 @@ import UserInput from '../src/components/UserInput';
 import { configureStore } from '../src/index.js';
 
 describe('store', () => {
-  
+
   let store = configureStore();
 
   it('returns the initial state after redux dispatches its initial action', () => {
@@ -15,8 +15,8 @@ describe('store', () => {
 
   it('updates the state when an action is dispatched', () => {
     store.dispatch({
-      type: 'ADD_USER', 
-      user: {
+      type: 'ADD_USER',
+      users: {
         username: 'bob',
         hometown: 'philly'
       },
